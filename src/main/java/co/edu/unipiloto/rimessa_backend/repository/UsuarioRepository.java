@@ -5,4 +5,5 @@ import co.edu.unipiloto.rimessa_backend.model.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     Usuario findByUsuario(String usuario);
+    long countByRolIgnoreCase(String rol);
 }

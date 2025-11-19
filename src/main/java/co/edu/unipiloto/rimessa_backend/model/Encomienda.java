@@ -17,13 +17,22 @@ public class Encomienda {
     private String usuarioRemitente;
     private String celularRemitente;
     private String direccionRemitenteActual;
+
     private String destinatario;
     private String celularDestinatario;
     private String direccionDestinatario;
+
     private String estado;
     private String fechaSolicitud;
     private String fechaEntrega;
+
     private double peso;
     private double precio;
+
     private String recolectorId;
+
+    // Nuevos campos para calificaciones/comentarios
+    private Integer calificacion; // null = sin calificar
+    @Column(columnDefinition = "text")
+    private String comentario;
 }

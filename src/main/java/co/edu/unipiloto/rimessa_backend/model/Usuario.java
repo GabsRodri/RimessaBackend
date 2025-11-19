@@ -23,5 +23,9 @@ public class Usuario {
     private String rol;
     private String fechaNacimiento;
     private String genero;
-}
 
+    // Foto: mejor manejar como Base64 o URL. Aquí permitimos Base64 (text).
+    @Lob
+    @Column(columnDefinition = "text")
+    private String fotoBase64;
+}
